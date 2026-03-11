@@ -2,7 +2,7 @@
 
 **Add `/gsd migrate` to [GSD-2](https://github.com/gsd-build/GSD-2)** — migrate old `.planning` directories to `.gsd` format.
 
-> Pre-release. This will be merged into GSD-2 core — install this if you want it now.
+> Pre-release. This may be merged into GSD-2 core — install this if you want it now.
 
 ## Install
 
