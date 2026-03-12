@@ -1,8 +1,10 @@
 # gsd-migrate
 
-**Add `/gsd migrate` to [GSD-2](https://github.com/gsd-build/GSD-2)** — migrate old `.planning` directories to `.gsd` format.
+> **DEPRECATED** — [PR #3](https://github.com/jonathancostin/GSD-2/pull/3) has been merged into GSD-2 core. This plugin is no longer needed. Use the latest version of GSD-2 directly.
 
-> Pre-release. This may be merged into GSD-2 core — install this if you want it now.
+---
+
+**Add `/gsd migrate` to [GSD-2](https://github.com/gsd-build/GSD-2)** — migrate old `.planning` directories to `.gsd` format.
 
 ## Install
 
@@ -67,7 +69,3 @@ Or just update `gsd-pi` — the next version will overwrite the patched files.
 ## How it works
 
 The installer downloads TypeScript source files into `~/.gsd/agent/extensions/gsd/` (the runtime extension directory). GSD loads extensions via `tsx` at runtime, so no compilation needed. It backs up `commands.ts` and `files.ts` before patching, and the uninstaller restores the originals.
-
-## Status
-
-[PR #3](https://github.com/jonathancostin/GSD-2/pull/3) — 478 test assertions, UAT against real projects. Pending review for merge into GSD-2 core.
